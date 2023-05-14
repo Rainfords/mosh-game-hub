@@ -10,7 +10,7 @@ interface DataResponse<T> {
 const useData = <T>(
   endpoint: string,
   requestConfig?: AxiosRequestConfig,
-  deps?: any[]
+  deps?: unknown[]
 ) => {
   const [data, setData] = useState<Array<T>>([]);
   const [error, setError] = useState("");
