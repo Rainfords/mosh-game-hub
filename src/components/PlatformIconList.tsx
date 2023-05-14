@@ -12,7 +12,6 @@ import { MdPhoneIphone } from "react-icons/md";
 import { SiNintendo } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { IconType } from "react-icons";
-import { color } from "framer-motion";
 
 interface Props {
   platforms: Array<Platform>;
