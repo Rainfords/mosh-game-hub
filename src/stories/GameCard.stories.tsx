@@ -5,6 +5,7 @@ const meta: Meta<typeof GameCard> = {
   component: GameCard,
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default meta;
 type Story = StoryObj<typeof GameCard>;
 
