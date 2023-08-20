@@ -13,7 +13,7 @@ const breakpoints = {
   sm: { minWidth: "(min-width: 320px)", skeletons: 1 }, // 480px
   md: { minWidth: "(min-width: 768px)", skeletons: 4 }, // 768px
   lg: { minWidth: "(min-width: 992px)", skeletons: 6 }, // 992px
-  xl: { minWidth: "(min-width: 1280px)", skeletons: 10 }, // 1280px
+  xl: { minWidth: "(min-width: 1280px)", skeletons: 8 }, // 1280px
 };
 const minWidths = Object.values(breakpoints).map(
   (breakpoint) => breakpoint.minWidth
@@ -37,8 +37,8 @@ const GameGrid = ({ gameQuery }: Props) => {
     <>
       {error && <Text>{error}</Text>}
       <SimpleGrid
-        columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}
-        spacing={3}
+        columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
+        spacing={6}
         padding="10px"
       >
         {isLoading &&
